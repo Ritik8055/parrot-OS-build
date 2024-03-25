@@ -6,3 +6,15 @@
     - role: "roles/configure-tmux"
     - role: "roles/customize-terminal"
     - role: "roles/install-tools"
+    - role: gantsign.visual-studio-code
+      users:
+        - username: "{{ ansible_user_id }}"
+          visual_studio_code_extensions:
+            - streetsidesoftware.code-spell-checker
+            - ms-python.python
+            - esbenp.prettier-vscode
+            - PKief.material-icon-theme
+            - formulahendry.code-runner
+            - eamodio.gitlens
+            - TabNine.tabnine-vscode
+            - Gruntfuggly.todo-tree
