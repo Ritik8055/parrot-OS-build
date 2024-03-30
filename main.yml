@@ -6,6 +6,7 @@
     - role: "roles/configure-tmux"
     - role: "roles/customize-terminal"
     - role: "roles/install-tools"
+    - role: "roles/customize-browser"
     - role: gantsign.visual-studio-code
       users:
         - username: "{{ ansible_user_id }}"
